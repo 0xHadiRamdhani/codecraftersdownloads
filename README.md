@@ -1,36 +1,197 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔐 CodeCrafters - Aplikasi Keamanan Siber
 
-## Getting Started
+> **"Security is not a product, but a process"** - Bruce Schneier
 
-First, run the development server:
+CodeCrafters adalah aplikasi keamanan siber profesional yang dirancang untuk developer, penetration tester, dan security enthusiast. Dengan antarmuka bertema matrix/hacker yang ikonik, aplikasi ini menyediakan berbagai alat penting untuk testing keamanan dan proteksi aplikasi web.
 
+## 🚀 Fitur Utama
+
+### 🔐 **Firebase Authentication System**
+- Login dan registrasi pengguna yang aman
+- Integrasi dengan Firebase Authentication
+- Manajemen sesi yang handal
+
+### 🛡️ **SQL Injection Checker**
+- Pemeriksaan kerentanan SQL Injection
+- Analisis keamanan database
+- Rekomendasi perbaikan keamanan
+
+### 🌐 **XSS Detector**
+- Deteksi kerentanan Cross-Site Scripting
+- Analisis keamanan aplikasi web
+- Proteksi terhadap serangan XSS
+
+### 🔍 **Mirror Tools**
+- Alat untuk mirror website secara massal
+- Fitur advanced crawling
+- Analisis struktur website
+
+### 📊 **SMB Enumeration**
+- Enumerasi SMB dengan Nmap
+- Analisis keamanan jaringan
+- Deteksi layanan jaringan
+
+### 🎯 **Digital Identity Investigation**
+- Alat investigasi identitas digital
+- Forensik digital
+- Analisis jejak digital
+
+## 🛠️ Teknologi yang Digunakan
+
+- **Framework**: Next.js 15.5.4 dengan React 19.1.0
+- **Styling**: Tailwind CSS v4
+- **Bahasa**: TypeScript
+- **Animasi**: Custom hooks dengan Intersection Observer
+- **Deployment**: Firebase Hosting
+- **Linting**: ESLint 9
+
+## 📋 Prasyarat
+
+Sebelum menjalankan proyek ini, pastikan Anda telah menginstal:
+
+- Node.js (versi 18 atau lebih baru)
+- npm, yarn, pnpm, atau bun
+- Git
+
+## 🚀 Instalasi dan Penggunaan
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/HadiOnZero/CodeCraftersNewVersion.git
+cd CodeCraftersNewVersion
+```
+
+### 2. Instalasi Dependensi
+```bash
+npm install
+# atau
+yarn install
+# atau
+pnpm install
+# atau
+bun install
+```
+
+### 3. Jalankan Development Server
 ```bash
 npm run dev
-# or
+# atau
 yarn dev
-# or
+# atau
 pnpm dev
-# or
+# atau
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Buka Aplikasi
+Buka browser dan akses [http://localhost:3000](http://localhost:3000) untuk melihat aplikasi.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Struktur Proyek
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+codecrafters/
+├── src/
+│   ├── app/                    # Next.js App Router
+│   │   ├── page.tsx           # Halaman utama (landing page)
+│   │   ├── layout.tsx         # Root layout
+│   │   └── globals.css        # Global styles
+│   ├── components/            # Komponen React
+│   │   ├── AnimatedSection.tsx    # Komponen animasi scroll
+│   │   ├── MatrixEffect.tsx       # Efek matrix background
+│   │   ├── MobileMenu.tsx         # Menu mobile
+│   │   └── SmoothScrollLink.tsx   # Link dengan smooth scroll
+│   └── hooks/                 # Custom React hooks
+│       └── useIntersectionObserver.ts
+├── public/                    # Aset statis
+├── .firebase/                # Konfigurasi Firebase
+├── firebase.json             # Firebase hosting config
+└── package.json              # Dependensi proyek
+```
 
-## Learn More
+## 🎨 Desain dan Tema
 
-To learn more about Next.js, take a look at the following resources:
+Aplikasi ini mengusung tema **Matrix/Hacker** dengan karakteristik:
+- **Warna Utama**: Hijau neon (#00ff00) dengan background hitam
+- **Font**: Monospace untuk kesan hacker autentik
+- **Efek Visual**: Matrix rain effect, animated grid lines
+- **Animasi**: Smooth scroll, fade animations, hover effects
+- **Ikon**: SVG icons dengan tema keamanan siber
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Download Aplikasi
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+CodeCrafters tersedia untuk berbagai platform:
 
-## Deploy on Vercel
+### 📱 iOS
+- **Format**: IPA
+- **Download**: [CodeCrafters-iOS.ipa](https://github.com/HadiOnZero/CodeCraftersNewVersion/releases/download/v1.0.0/CodeCrafters-iOS.ipa)
+- **Kompatibilitas**: iPhone dan iPad
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🤖 Android
+- **Format**: APK
+- **Download**: [CodeCrafters-Android.apk](https://github.com/HadiOnZero/CodeCraftersNewVersion/releases/download/v1.0.0/CodeCrafters-Android.apk)
+- **Kompatibilitas**: Semua perangkat Android
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 💻 Versi Lainnya
+Untuk versi lainnya, kunjungi [GitHub Releases](https://github.com/HadiOnZero/CodeCraftersNewVersion/releases)
+
+## 🔧 Skrip yang Tersedia
+
+- **`npm run dev`** - Jalankan development server dengan Turbopack
+- **`npm run build`** - Build aplikasi untuk production
+- **`npm run start`** - Jalankan production server
+- **`npm run lint`** - Jalankan ESLint untuk code linting
+
+## 🌐 Deployment
+
+### Firebase Hosting
+Proyek ini dikonfigurasi untuk deployment di Firebase Hosting:
+
+```bash
+npm run build
+firebase deploy
+```
+
+### Vercel
+Alternatif deployment dengan Vercel:
+
+```bash
+vercel
+```
+
+## 🤝 Kontribusi
+
+Kami menyambut kontribusi dari komunitas! Untuk berkontribusi:
+
+1. Fork repository ini
+2. Buat branch fitur Anda (`git checkout -b fitur-baru`)
+3. Commit perubahan Anda (`git commit -m 'Menambahkan fitur baru'`)
+4. Push ke branch (`git push origin fitur-baru`)
+5. Buat Pull Request
+
+## 📞 Kontak
+
+- **Email**: hadsxdev@gmail.com
+- **Lokasi**: Subang, Indonesia
+- **GitHub**: [HadiOnZero](https://github.com/HadiOnZero)
+
+## 👥 Tim Pengembang
+
+- **Programmer**: Hadi Ramdhani
+- **Designer**: Hadi Ramdhani  
+- **DevOps**: Akmal Alhafiz
+
+## 📄 Lisensi
+
+Proyek ini adalah open source dan tersedia di bawah [MIT License](LICENSE).
+
+## ⚠️ Disclaimer
+
+CodeCrafters adalah alat untuk testing keamanan dan edukasi. Gunakan secara bertanggung jawab dan hanya pada sistem yang Anda miliki atau memiliki izin untuk diuji. Kami tidak bertanggung jawab atas penyalahgunaan aplikasi ini.
+
+## 🌟 Star & Support
+
+Jika Anda menyukai proyek ini, berikan ⭐ di GitHub dan bagikan kepada komunitas!
+
+---
+
+**[© 2024 CodeCrafters Security Team](https://github.com/HadiOnZero/CodeCraftersNewVersion)** | **[Open Source Project](https://github.com/HadiOnZero/CodeCraftersNewVersion)**
